@@ -1,0 +1,106 @@
+header{
+    background-color: #243549;
+}
+.header{
+    @include flex (space-between, center);
+    padding: 1.5rem 4rem;
+    &-left{
+        @include flex (space-between, center);
+
+        .header-logo{
+            padding-right: 4rem;
+        }
+
+        ul{
+            @include flex(space-around, center);
+            
+            li{
+                font-family: $font-sub;
+                font-weight: bold;
+
+
+                a{
+                    color: #e6dedef1;
+                    font-size: 1.2rem;
+                    line-height: 2.2rem;
+                    padding: 0 3.2rem;
+                    border-left: 1px solid #b4b0b0d8 ;
+                    position: relative;
+                    text-transform: uppercase;
+                    @include mobile{
+                        border-left: none;
+                    }
+                }
+            }
+            @include tablet{
+                @include flex(flex-start,center);
+                position: absolute;
+                top: 0;
+                left: -100%;
+                flex-direction: column;
+                width: 80%;
+                height: 100vh;
+                padding-top: 10rem;
+                transition: .3s;
+                background-color: black;
+                color: $color-white;
+
+
+                li~li{
+                    padding-top: 2rem;
+                }
+            }
+        }
+    }
+    &-btn{
+        @include flex(center, center);
+        background-color: $color-white;
+        width: 21.8rem;
+        height: 5rem;
+        border-radius: 2.5rem;
+        font-family: $font-sub;
+        font-weight: 700;
+        font-size: 1.6rem;
+        line-height: 2.6rem;
+        cursor: pointer;
+
+
+        &:hover{
+            background-color: $color-blue;
+            color: $color-white;
+        }
+        @include tablet{
+            display: none;
+        }
+    }
+
+    &-icon{
+        display: none;
+        font-size: 5rem;
+        color: $color-white;
+        @include tablet{
+            display: block;
+        }
+    }
+    @include tablet{
+        .header-logo{
+            padding-right: 2rem;
+        }
+        ul li a{
+            padding: 0 1.2rem;
+        }
+    }
+    
+
+    @include customize(1025px , 1253px){
+        
+        ul li a{
+            padding: 0 1.2rem;
+        }
+    }
+    @include customize(1501px, 100vw){
+        margin: 0 auto;
+        width: 1500px;
+        
+    }
+}

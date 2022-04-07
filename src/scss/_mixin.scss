@@ -1,0 +1,25 @@
+@mixin flex ($jc , $ai) {
+    display: flex;
+    justify-content: $jc;
+    align-items: $ai;
+}
+@mixin mobile {
+    @media screen and (max-width: 740px) {
+        @content;
+    }
+}
+@mixin tablet {
+
+    @media screen and (max-width: 1024px) {
+        html{
+            font-size: 40.5%;
+        }
+        @content;
+    }
+}
+
+@mixin customize ($min,$max){
+    @media screen and(min-width: $min) and (max-width: $max){
+        @content;
+    }
+}

@@ -1,0 +1,226 @@
+.footer{
+    max-width: 1500px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 9.8rem 4rem 4rem;
+    @include flex(flex-start,&);
+    &-logo{
+        margin-right: 3rem;
+    }
+    &-content{
+        width: 90%;
+        
+        &-up{
+            @include flex(flex-start,&);
+            border-bottom: 1px solid #2323271A;
+            .contact{
+                width: 18%;
+                p{
+                    font-family: $font-sub;
+                    font-weight: 400;
+                    font-size: 1.6rem;
+                    line-height: 2.6rem;
+                    color: #172940E5;
+                }
+                a{
+                    font-family: $font-sub;
+                    font-weight: 400;
+                    font-size: 1.6rem;
+                    line-height: 2.6rem;
+                    color: #4C8FCC;
+                }
+                &-head{
+                    position: relative;
+
+                    &::after{
+                        content: "";
+                        height: 0.3rem;
+                        width: 4rem;
+                        background-color: #2323271A;
+                        position: absolute;
+                        left: 0;
+                        bottom: -4rem;
+                    }
+                    
+                }
+                &-info{
+                    margin-top: 5.8rem;
+                    
+                    .info{
+                        margin-bottom: 3.2rem;
+                        &-name{
+                            font-weight: 700;
+                        }
+                    }
+                }
+                @include mobile{
+                    width: 100%;
+                }
+            }
+
+            .content-right{
+                width: calc(82% - 12.6rem);
+                margin-left: 12.6rem;
+                h5{
+                    font-family: myfont;
+                    font-weight: 500;
+                    font-size: 3.6rem;
+                    line-height: 3.6rem;
+                    letter-spacing: -0.1rem;
+                    color: #172940;
+                    margin-bottom: 2.6rem;
+                }
+                a{
+                    font-family: $font-sub;
+                    font-weight: 400;
+                    font-size: 1.6rem;
+                    line-height: 2.6rem;
+                    color: $color-black;
+                    position: relative;
+                        &::before{
+                            content: "";
+                            position: absolute;
+                            left: 0px;
+                            right: 0px;
+                            bottom: -2px;
+                            width: 0;
+                            height: 2px;
+                            background: purple;
+                            opacity: 0;
+                            transition: 0.5s ease;
+                        }
+                        &:hover::before{
+                            width: 100%;
+                            opacity: 1;
+                        }
+                }
+                .we-do{
+                    border-bottom: 1px solid #2323271A;
+                    padding-bottom: 4.5rem;
+                    &-content{
+                        @include flex(space-between,center);
+                        .we-do-list{
+                            @include flex(space-around,center);
+
+                            .we-do-item{
+                                margin-right: 5.3rem;
+                                p{
+                                    margin-bottom: 1.2rem;
+                                }
+                            }
+                        }
+                        @include mobile{
+                            display: block;
+                            width: 100%;
+                        }
+                    }
+                    &-btn{
+                        width: 23.8rem;
+                        height: 6.5rem;
+                        border-radius: 4rem;
+                        background-color: $color-blue;
+                        font-family: $font-sub;
+                        font-weight: 700;
+                        font-size: 1.6rem;
+                        line-height: 2.6rem;
+                        @include flex(center,center);
+                        color: $color-white;
+
+                        &:hover{
+                            background-color: $color-black;
+                        }
+                    }
+                    
+                }
+                .you-want{
+                    padding: 3rem 0;
+
+                    &-content{
+                        @include flex(space-between,flex-start);
+                        ul{
+                           
+                            
+                            li{
+                                margin-bottom: 1.2rem;
+                            }
+                        }
+                        @include mobile{
+                            // flex-wrap: wrap;
+                        }
+
+                    }
+                    
+                }
+                @include mobile{
+                    width: 100%;
+                    margin-left: 0;
+                }
+            }
+            @include mobile{
+                display: block;
+            }
+        }
+        &-bottom{
+            @include flex(space-between,center);
+            margin-top: 4rem;
+            p{
+                font-family: $font-sub;
+                font-weight: 400;
+                font-size: 1.4rem;
+                line-height: 2.2rem;
+                color: #232327B2;
+            }
+            ul{
+                @include flex(center,center);
+                li{
+                    padding: 0 2.4rem;
+                    a{
+                        font-family: $font-sub;
+                        font-weight: 400;
+                        font-size: 1.4rem;
+                        line-height: 2.2rem;
+                        color: #172940E5;
+                        position: relative;
+                        &::before{
+                            content: "";
+                            position: absolute;
+                            left: 0px;
+                            right: 0px;
+                            bottom: -2px;
+                            width: 0;
+                            height: 2px;
+                            background: purple;
+                            opacity: 0;
+                            transition: 0.5s ease;
+                        }
+                        &:hover::before{
+                            width: 100%;
+                            opacity: 1;
+                        }
+                    }
+                }
+                .li1{
+                    border-right: 1px solid #D2D9E2;
+                }
+                @include mobile{
+                    display: none;
+                }
+            }
+            .icon-link{
+                a{
+                    margin-left: 2rem;
+                   
+                }
+            }
+            
+        }
+        @include mobile{
+            width: 100%;
+        }
+        
+    }
+    @include mobile{
+        display: block;
+        
+    }
+}

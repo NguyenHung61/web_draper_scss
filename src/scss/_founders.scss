@@ -1,0 +1,97 @@
+
+.founders{
+    @include flex(center,center);
+    flex-direction: column;
+    width: 100%;
+    padding-top: 15rem;
+    h3{
+        font-family: myfont;
+        font-weight: 500;
+        font-size: 9rem;
+        line-height: 9rem;
+        text-align: center;
+        color: $color-blue;
+        margin-bottom: 8rem;
+    }
+
+    &-contents{
+
+        .content{
+            @include flex(center, center);
+            
+            h4{
+                background-color: #3DAE73;
+                width: 40%;
+                margin: 0 auto;
+                text-transform: uppercase;
+                text-align: center;
+                letter-spacing: -0.1rem;
+                align-self: stretch;
+                padding: 2.6rem 6.9rem;
+                font: {
+                    family: myfont;
+                    weight: 400;
+                    size: 5.6rem;
+                }
+                color: $color-white;
+                @include mobile{
+                    width: 100%;
+                    
+                }
+                
+            }
+            @include mobile{
+                display: block;
+            }
+            }
+        
+        .content-lists{
+            @include flex(space-around,center);
+            font-family: $font-sub;
+            font-weight: 400;
+            font-size: 1.8rem;
+            line-height: 2.8rem;
+            color: $color-black;
+            
+
+            .content-list{
+                padding-left: 5.2rem;
+                width: 48%;
+                background-color: #F4F6F8;
+                align-self: stretch;
+                div{
+                    padding: 3.6rem 0;
+                }
+                @include mobile{
+                    width: 100%;
+                    margin-bottom: 1.5rem;
+                }
+            }
+            @include mobile{
+                display: block;
+                width: 100%;
+                
+            }
+        }
+    }
+
+    &-btn{ 
+        @include flex(center, center);
+        margin-top: 8rem;
+        width: 27.7rem;
+        height: 6.5rem;
+        border-radius: 4rem;
+        background-color: $color-blue;
+        font-family: $font-sub;
+        font-size: 1.6rem;
+        font-weight: 700;
+        text-align: center;
+        line-height: 2.6rem;
+        color: $color-white;
+        cursor: pointer;
+        &:hover{
+            background-color: $color-black-primary;
+            
+        }
+    }
+}

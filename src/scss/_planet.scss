@@ -1,0 +1,72 @@
+
+.planet{
+    @include flex(space-between, center);
+    margin-bottom: 15rem;
+    margin: 0 auto;
+    &-content{
+        @include flex(center,center);
+        width: 55%;
+        padding: 0 15px;
+        .main-content{
+            max-width: 63.9rem ;
+            width: 100%;
+            @include flex(center,center);
+            flex-direction: column;
+            h3{
+                font-family: myfont;
+                font-weight: 400;
+                font-size: 9rem;
+                line-height: 9rem;
+                color: $color-blue;
+                letter-spacing: -0.3rem;
+                margin-bottom: 2.5rem;
+            }
+            .planet-content-item{
+                @include flex(flex-end, center);
+                border-top: 1px solid #2323271A;
+                padding: 5.2rem 0;
+                p:first-child{
+                    font-family: $font-sub;
+                    font-weight: 700;
+                    font-size: 1.6rem;
+                    line-height: 2.6rem;
+                    
+                }
+                p:last-child{
+                    font-family: $font-sub;
+                    font-weight: 400;
+                    font-size: 1.6rem;
+                    line-height: 2.6rem;
+                    
+                }
+            }
+        }
+        @include mobile{
+            width: 100%;
+        }
+    }
+
+    &-img{
+        width: 40%;
+        @include flex(center, center);
+        img{
+            max-width: 100%;
+        }
+        @include mobile{
+            width: 100%;
+            padding: 0 15px;
+        }
+    }
+
+
+    @include mobile{
+        display: block;
+        
+        
+    }
+
+    @include customize(1501px, 100vw){
+        width: 1500px;
+        
+    }
+}
