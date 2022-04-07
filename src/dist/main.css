@@ -661,7 +661,7 @@ header {
 @media screen and (max-width: 740px) {
   .startup-right {
     width: 100%;
-    margin-top: 6rem;
+    margin-top: 15rem;
     margin-left: 0;
   }
 }
