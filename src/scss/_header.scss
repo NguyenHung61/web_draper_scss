@@ -27,29 +27,33 @@ header{
                     border-left: 1px solid #b4b0b0d8 ;
                     position: relative;
                     text-transform: uppercase;
-                    @include mobile{
+                    @include tablet{
                         border-left: none;
                     }
                 }
             }
             @include tablet{
                 @include flex(flex-start,center);
-                position: absolute;
+                position: fixed;
                 top: 0;
                 left: -100%;
                 flex-direction: column;
                 width: 80%;
-                height: 100vh;
-                padding-top: 10rem;
+                // height: 100vh;
+                padding: 10rem 0;
                 transition: .3s;
-                background-color: black;
+                background-color: $color-blue;
                 color: $color-white;
-
+                
 
                 li~li{
-                    padding-top: 2rem;
+                    padding-top: 5rem;
+                }
+                &.active{
+                    left: 0;
                 }
             }
+            
         }
     }
     &-btn{

@@ -100,9 +100,12 @@ header {
   position: relative;
   text-transform: uppercase;
 }
-@media screen and (max-width: 740px) {
+@media screen and (max-width: 1024px) {
   .header-left ul li a {
     border-left: none;
+  }
+  .header-left ul li a html {
+    font-size: 40.5%;
   }
 }
 @media screen and (max-width: 1024px) {
@@ -110,22 +113,24 @@ header {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    position: absolute;
+    position: fixed;
     top: 0;
     left: -100%;
     flex-direction: column;
     width: 80%;
-    height: 100vh;
-    padding-top: 10rem;
+    padding: 10rem 0;
     transition: 0.3s;
-    background-color: black;
+    background-color: #204370;
     color: #FFFFFF;
   }
   .header-left ul html {
     font-size: 40.5%;
   }
   .header-left ul li ~ li {
-    padding-top: 2rem;
+    padding-top: 5rem;
+  }
+  .header-left ul.active {
+    left: 0;
   }
 }
 .header-btn {

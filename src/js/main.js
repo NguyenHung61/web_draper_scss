@@ -1,21 +1,5 @@
-var mySwiper = new Swiper ('.swiper-container', {
-    // Các Parameters
-    direction: 'vertical',
-    loop: true,
-
-    // Nếu cần pagination
-    pagination: {
-      el: '.swiper-pagination',
-    },
-
-    // Nếu cần navigation
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
-
-    // Nếu cần scrollbar
-    scrollbar: {
-      el: '.swiper-scrollbar',
-    },
-  })
+var buttonlist = document.querySelector('.header-icon i');
+var headerlist = document.querySelector('.header-list');
+buttonlist.addEventListener('click', () =>{
+  headerlist.classList.toggle('active');
+})
