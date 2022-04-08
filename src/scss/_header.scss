@@ -63,7 +63,7 @@ header{
         font-size: 1.6rem;
         line-height: 2.6rem;
         cursor: pointer;
-
+        transition: .5s;
 
         &:hover{
             background-color: $color-blue;

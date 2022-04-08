@@ -141,6 +141,7 @@ header {
   font-size: 1.6rem;
   line-height: 2.6rem;
   cursor: pointer;
+  transition: 0.5s;
 }
 .header-btn:hover {
   background-color: #204370;
