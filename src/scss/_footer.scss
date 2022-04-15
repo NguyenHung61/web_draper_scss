@@ -9,21 +9,15 @@
     }
     &-content{
         width: 90%;
-        
         &-up{
             @include flex(flex-start,null);
             border-bottom: 1px solid #2323271A;
             .contact{
                 width: 18%;
                 p{
-                    font-family: $font-sub;
-                    font-weight: 400;
-                    font-size: 1.6rem;
-                    line-height: 2.6rem;
                     color: #172940E5;
                 }
                 a{
-                    font-family: $font-sub;
                     font-weight: 400;
                     font-size: 1.6rem;
                     line-height: 2.6rem;
@@ -71,27 +65,16 @@
                     margin-bottom: 2.6rem;
                 }
                 a{
-                    font-family: $font-sub;
                     font-weight: 400;
                     font-size: 1.6rem;
                     line-height: 2.6rem;
                     color: $color-black;
-                    position: relative;
                         &::before{
-                            content: "";
-                            position: absolute;
+                            content: "";                      
                             left: 0px;
-                            right: 0px;
-                            bottom: -2px;
-                            width: 0;
-                            height: 2px;
-                            background: $color-blue;
-                            opacity: 0;
-                            transition: 0.5s ease;
                         }
                         &:hover::before{
                             width: 100%;
-                            opacity: 1;
                         }
                 }
                 .we-do{
@@ -119,11 +102,6 @@
                         height: 6.5rem;
                         border-radius: 4rem;
                         background-color: $color-blue;
-                        font-family: $font-sub;
-                        font-weight: 700;
-                        font-size: 1.6rem;
-                        line-height: 2.6rem;
-                        @include flex(center,center);
                         color: $color-white;
 
                         &:hover{
@@ -138,18 +116,11 @@
                     &-content{
                         @include flex(space-between,flex-start);
                         ul{
-                           
-                            
                             li{
                                 margin-bottom: 1.2rem;
                             }
                         }
-                        @include mobile{
-                            // flex-wrap: wrap;
-                        }
-
                     }
-                    
                 }
                 @include mobile{
                     width: 100%;
@@ -164,8 +135,6 @@
             @include flex(space-between,center);
             margin-top: 4rem;
             p{
-                font-family: $font-sub;
-                font-weight: 400;
                 font-size: 1.4rem;
                 line-height: 2.2rem;
                 color: #232327B2;
@@ -175,27 +144,15 @@
                 li{
                     padding: 0 2.4rem;
                     a{
-                        font-family: $font-sub;
                         font-weight: 400;
                         font-size: 1.4rem;
                         line-height: 2.2rem;
                         color: #172940E5;
-                        position: relative;
                         &::before{
-                            content: "";
-                            position: absolute;
                             left: 0px;
-                            right: 0px;
-                            bottom: -2px;
-                            width: 0;
-                            height: 2px;
-                            background: $color-blue;
-                            opacity: 0;
-                            transition: 0.5s ease;
                         }
                         &:hover::before{
                             width: 100%;
-                            opacity: 1;
                         }
                     }
                 }
@@ -209,18 +166,14 @@
             .icon-link{
                 a{
                     margin-left: 2rem;
-                   
                 }
             }
-            
         }
         @include mobile{
             width: 100%;
         }
-        
     }
     @include mobile{
         display: block;
-        
     }
 }

@@ -12,11 +12,7 @@
         width: calc(20% - 3.3rem);
         margin-left: 3.3rem;
        h3{
-        font-family: myfont;
         font-weight: 500;
-        font-size: 9rem;
-        line-height: 9rem;
-        letter-spacing: -0.1rem;
        }
        @include mobile{
            width: 100%;
@@ -56,8 +52,7 @@
                 right: 2rem;
             }
             p{
-                width: 85%;
-                font-family: $font-sub;
+                width: 70%;
                 font-weight: bold;
                 font-size: 2rem;
                 line-height: 2.8rem;

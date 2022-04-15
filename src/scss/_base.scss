@@ -12,7 +12,9 @@ html{
     }
 }
 a{
+    font-family: $font-sub;
     text-decoration: none;
+    position: relative;
     &::before{
         content: "";
         position: absolute;
@@ -32,6 +34,31 @@ a{
 }
 li{
     list-style: none;
+}
+h3{
+    font-family: myfont;
+    font-weight: 400;
+    font-size: 9rem;
+    line-height: 9rem;
+    letter-spacing: -0.1rem;
+    color: $color-blue;
+}
+p{
+    font-family: $font-sub;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 2.6rem;
+}
+.btn{
+    @include flex(center, center);
+    border-radius: 2.5rem;
+    font-family: $font-sub;
+    font-weight: 700;
+    font-size: 1.6rem;
+    line-height: 2.6rem;
+    transition: .5s;
+    border: none;
+    cursor: pointer;
 }
 .wrapper{
     max-width: 1500px;

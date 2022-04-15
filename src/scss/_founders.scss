@@ -5,12 +5,8 @@
     width: 100%;
     padding-top: 15rem;
     h3{
-        font-family: myfont;
         font-weight: 500;
-        font-size: 9rem;
-        line-height: 9rem;
         text-align: center;
-        color: $color-blue;
         margin-bottom: 8rem;
     }
 
@@ -81,19 +77,12 @@
     }
 
     &-btn{ 
-        @include flex(center, center);
         margin-top: 8rem;
         width: 27.7rem;
         height: 6.5rem;
         border-radius: 4rem;
         background-color: $color-blue;
-        font-family: $font-sub;
-        font-size: 1.6rem;
-        font-weight: 700;
-        text-align: center;
-        line-height: 2.6rem;
         color: $color-white;
-        cursor: pointer;
         &:hover{
             background-color: $color-black-primary;
             

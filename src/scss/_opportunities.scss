@@ -15,33 +15,19 @@
         margin-left: 12.4rem;
 
         h3{
-            font-family: myfont;
-            font-weight: 400;
-            font-size: 9rem;
-            line-height: 9rem;
-            letter-spacing: -0.1rem;
             color: $color-white;
         }
         p{
-            font-family: $font-sub;
-            font-weight: 400;
-            font-size: 1.6rem;
-            line-height: 2.6rem;
             color: $color-white;
             margin-top: 2.8rem;
         }
         .opportunities-btn{
-            @include flex(center,center);
             width: 17.7rem;
             height: 6.5rem;
             border-radius: 4rem;
             background-color: $color-blue;
             color: $color-white;
-            font-family: $font-sub;
-            font-size: 1.6rem;
-            line-height: 2.6rem;
             margin-top: 7rem;
-            cursor: pointer;
 
             &:hover{
                 background-color: $color-black;
@@ -50,9 +36,7 @@
 
         @include mobile{
             width: 100%;
-            margin-left: 0;
-
-            
+            margin-left: 0; 
         }
     }
     @include mobile{

@@ -2,19 +2,9 @@
     @include flex(center,center);
     padding: 15rem 0;
     &-left{
-        width: 35%;
-        
+        width: 35%;  
         h3{
-
             width: 80%;
-            font-family: myfont;
-            font-weight: 400;
-            font-size: 9rem;
-            line-height: 9rem;
-            letter-spacing: -0.1rem;
-            color: $color-blue;
-
-
             @include mobile{
                 width: 100%;
             }
@@ -81,10 +71,6 @@
             border-bottom: 1px solid #FFFFFF; ;
 
             p{
-                font-family: $font-sub;
-                font-weight: 400;
-                font-size: 1.6rem;
-                line-height: 2.6rem;
                 color: $color-white;
             }
         }
@@ -105,10 +91,7 @@
                     color: $color-white;
                 }
                 p{
-                    font-family: $font-sub;
                     font-weight: bold;
-                    font-size: 1.6rem;
-                    line-height: 2.6rem;
                     color: $color-white;
                 }
             }

@@ -23,7 +23,9 @@ html {
 }
 
 a {
+  font-family: "Oxygen", sans-serif;
   text-decoration: none;
+  position: relative;
 }
 a::before {
   content: "";
@@ -44,6 +46,36 @@ a:hover::before {
 
 li {
   list-style: none;
+}
+
+h3 {
+  font-family: myfont;
+  font-weight: 400;
+  font-size: 9rem;
+  line-height: 9rem;
+  letter-spacing: -0.1rem;
+  color: #204370;
+}
+
+p {
+  font-family: "Oxygen", sans-serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 2.5rem;
+  font-family: "Oxygen", sans-serif;
+  font-weight: 700;
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+  transition: 0.5s;
+  border: none;
+  cursor: pointer;
 }
 
 .wrapper {
@@ -106,7 +138,6 @@ header {
   align-items: center;
 }
 .header-left ul li {
-  font-family: "Oxygen", sans-serif;
   font-weight: bold;
 }
 .header-left ul li a {
@@ -115,7 +146,6 @@ header {
   line-height: 2.2rem;
   padding: 0 3.2rem;
   border-left: 1px solid #b4b0b0d8;
-  position: relative;
   text-transform: uppercase;
 }
 @media screen and (max-width: 1024px) {
@@ -152,19 +182,9 @@ header {
   }
 }
 .header-btn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   background-color: #FFFFFF;
   width: 21.8rem;
   height: 5rem;
-  border-radius: 2.5rem;
-  font-family: "Oxygen", sans-serif;
-  font-weight: 700;
-  font-size: 1.6rem;
-  line-height: 2.6rem;
-  cursor: pointer;
-  transition: 0.5s;
 }
 .header-btn:hover {
   background-color: #204370;
@@ -238,10 +258,7 @@ header {
   text-align: center;
 }
 .banner-content p {
-  font-family: "Oxygen", sans-serif;
-  font-size: 1.6rem;
   font-weight: bold;
-  line-height: 2.6rem;
   text-align: center;
   color: #FFFFFF;
 }
@@ -267,19 +284,7 @@ header {
 .companies-content {
   width: 35%;
 }
-.companies-content h3 {
-  font-family: myfont;
-  font-weight: 400;
-  font-size: 9rem;
-  line-height: 9rem;
-  color: #204370;
-  letter-spacing: -0.2rem;
-}
 .companies-content p {
-  font-family: "Oxygen", sans-serif;
-  font-weight: 400;
-  font-size: 1.6rem;
-  line-height: 2.6rem;
   color: #232327;
 }
 @media screen and (max-width: 740px) {
@@ -322,32 +327,20 @@ header {
   flex-direction: column;
 }
 .planet-content .main-content h3 {
-  font-family: myfont;
-  font-weight: 400;
-  font-size: 9rem;
-  line-height: 9rem;
-  color: #204370;
-  letter-spacing: -0.3rem;
   margin-bottom: 2.5rem;
 }
 .planet-content .main-content .planet-content-item {
   display: flex;
-  justify-content: flex-end;
-  align-items: center;
+  justify-content: space-between;
   border-top: 1px solid #2323271A;
   padding: 5.2rem 0;
 }
 .planet-content .main-content .planet-content-item p:first-child {
-  font-family: "Oxygen", sans-serif;
   font-weight: 700;
-  font-size: 1.6rem;
-  line-height: 2.6rem;
+  width: 30%;
 }
 .planet-content .main-content .planet-content-item p:last-child {
-  font-family: "Oxygen", sans-serif;
-  font-weight: 400;
-  font-size: 1.6rem;
-  line-height: 2.6rem;
+  width: 65%;
 }
 @media screen and (max-width: 740px) {
   .planet-content {
@@ -389,12 +382,8 @@ header {
   padding-top: 15rem;
 }
 .founders h3 {
-  font-family: myfont;
   font-weight: 500;
-  font-size: 9rem;
-  line-height: 9rem;
   text-align: center;
-  color: #204370;
   margin-bottom: 8rem;
 }
 .founders-contents .content {
@@ -463,21 +452,12 @@ header {
   }
 }
 .founders-btn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   margin-top: 8rem;
   width: 27.7rem;
   height: 6.5rem;
   border-radius: 4rem;
   background-color: #204370;
-  font-family: "Oxygen", sans-serif;
-  font-size: 1.6rem;
-  font-weight: 700;
-  text-align: center;
-  line-height: 2.6rem;
   color: #FFFFFF;
-  cursor: pointer;
 }
 .founders-btn:hover {
   background-color: #2A2A2A;
@@ -503,11 +483,7 @@ header {
   margin-left: 3.3rem;
 }
 .easy-heading h3 {
-  font-family: myfont;
   font-weight: 500;
-  font-size: 9rem;
-  line-height: 9rem;
-  letter-spacing: -0.1rem;
 }
 @media screen and (max-width: 740px) {
   .easy-heading {
@@ -550,8 +526,7 @@ header {
   right: 2rem;
 }
 .easy-list .easy-item p {
-  width: 85%;
-  font-family: "Oxygen", sans-serif;
+  width: 70%;
   font-weight: bold;
   font-size: 2rem;
   line-height: 2.8rem;
@@ -585,12 +560,6 @@ header {
 }
 .startup-left h3 {
   width: 80%;
-  font-family: myfont;
-  font-weight: 400;
-  font-size: 9rem;
-  line-height: 9rem;
-  letter-spacing: -0.1rem;
-  color: #204370;
 }
 @media screen and (max-width: 740px) {
   .startup-left h3 {
@@ -656,10 +625,6 @@ header {
   border-bottom: 1px solid #FFFFFF;
 }
 .startup-right-content p {
-  font-family: "Oxygen", sans-serif;
-  font-weight: 400;
-  font-size: 1.6rem;
-  line-height: 2.6rem;
   color: #FFFFFF;
 }
 .startup-right .cost {
@@ -677,10 +642,7 @@ header {
   color: #FFFFFF;
 }
 .startup-right .cost-item p {
-  font-family: "Oxygen", sans-serif;
   font-weight: bold;
-  font-size: 1.6rem;
-  line-height: 2.6rem;
   color: #FFFFFF;
 }
 @media screen and (max-width: 740px) {
@@ -710,12 +672,7 @@ header {
   margin-bottom: 11.1rem;
 }
 .idea-heading h3 {
-  font-family: myfont;
   font-weight: 500;
-  font-size: 9rem;
-  line-height: 9rem;
-  letter-spacing: -0.1rem;
-  color: #204370;
   text-transform: uppercase;
 }
 @media screen and (max-width: 740px) {
@@ -774,10 +731,6 @@ header {
 }
 .idea-list .idea-item .discrip {
   margin: 4rem 0;
-  font-family: "Oxygen", sans-serif;
-  font-weight: 400;
-  font-size: 1.6rem;
-  line-height: 2.6rem;
   color: #232327E5;
 }
 @media screen and (max-width: 740px) {
@@ -813,35 +766,19 @@ header {
   margin-left: 12.4rem;
 }
 .opportunities-content h3 {
-  font-family: myfont;
-  font-weight: 400;
-  font-size: 9rem;
-  line-height: 9rem;
-  letter-spacing: -0.1rem;
   color: #FFFFFF;
 }
 .opportunities-content p {
-  font-family: "Oxygen", sans-serif;
-  font-weight: 400;
-  font-size: 1.6rem;
-  line-height: 2.6rem;
   color: #FFFFFF;
   margin-top: 2.8rem;
 }
 .opportunities-content .opportunities-btn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   width: 17.7rem;
   height: 6.5rem;
   border-radius: 4rem;
   background-color: #204370;
   color: #FFFFFF;
-  font-family: "Oxygen", sans-serif;
-  font-size: 1.6rem;
-  line-height: 2.6rem;
   margin-top: 7rem;
-  cursor: pointer;
 }
 .opportunities-content .opportunities-btn:hover {
   background-color: #232327;
@@ -881,14 +818,9 @@ header {
   width: 18%;
 }
 .footer-content-up .contact p {
-  font-family: "Oxygen", sans-serif;
-  font-weight: 400;
-  font-size: 1.6rem;
-  line-height: 2.6rem;
   color: #172940E5;
 }
 .footer-content-up .contact a {
-  font-family: "Oxygen", sans-serif;
   font-weight: 400;
   font-size: 1.6rem;
   line-height: 2.6rem;
@@ -934,28 +866,17 @@ header {
   margin-bottom: 2.6rem;
 }
 .footer-content-up .content-right a {
-  font-family: "Oxygen", sans-serif;
   font-weight: 400;
   font-size: 1.6rem;
   line-height: 2.6rem;
   color: #232327;
-  position: relative;
 }
 .footer-content-up .content-right a::before {
   content: "";
-  position: absolute;
   left: 0px;
-  right: 0px;
-  bottom: -2px;
-  width: 0;
-  height: 2px;
-  background: #204370;
-  opacity: 0;
-  transition: 0.5s ease;
 }
 .footer-content-up .content-right a:hover::before {
   width: 100%;
-  opacity: 1;
 }
 .footer-content-up .content-right .we-do {
   border-bottom: 1px solid #2323271A;
@@ -988,13 +909,6 @@ header {
   height: 6.5rem;
   border-radius: 4rem;
   background-color: #204370;
-  font-family: "Oxygen", sans-serif;
-  font-weight: 700;
-  font-size: 1.6rem;
-  line-height: 2.6rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   color: #FFFFFF;
 }
 .footer-content-up .content-right .we-do-btn:hover {
@@ -1029,8 +943,6 @@ header {
   margin-top: 4rem;
 }
 .footer-content-bottom p {
-  font-family: "Oxygen", sans-serif;
-  font-weight: 400;
   font-size: 1.4rem;
   line-height: 2.2rem;
   color: #232327B2;
@@ -1044,28 +956,16 @@ header {
   padding: 0 2.4rem;
 }
 .footer-content-bottom ul li a {
-  font-family: "Oxygen", sans-serif;
   font-weight: 400;
   font-size: 1.4rem;
   line-height: 2.2rem;
   color: #172940E5;
-  position: relative;
 }
 .footer-content-bottom ul li a::before {
-  content: "";
-  position: absolute;
   left: 0px;
-  right: 0px;
-  bottom: -2px;
-  width: 0;
-  height: 2px;
-  background: #204370;
-  opacity: 0;
-  transition: 0.5s ease;
 }
 .footer-content-bottom ul li a:hover::before {
   width: 100%;
-  opacity: 1;
 }
 .footer-content-bottom ul .li1 {
   border-right: 1px solid #D2D9E2;
