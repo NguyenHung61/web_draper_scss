@@ -91,7 +91,7 @@
 
 
         .cost{
-            @include flex(&,center);
+            @include flex(null,center);
             gap: 0 4.7rem;
             margin-top: 2.8rem;
             &-item{

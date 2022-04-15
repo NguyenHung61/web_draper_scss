@@ -1,4 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Oxygen:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oxygen:wght@400;700&display=swap");
+@font-face {
+  font-family: myfont;
+  src: url(../assets/AlternateGothicNo1DRegular/Alternate\ Gothic\ No1\ D\ Regular.otf);
+}
 * {
   margin: 0;
   padding: 0;
@@ -28,7 +33,7 @@ a::before {
   bottom: -2px;
   width: 0;
   height: 2px;
-  background: purple;
+  background: #204370;
   opacity: 0;
   transition: 0.5s ease;
 }
@@ -66,6 +71,18 @@ li {
 }
 header {
   background-color: #243549;
+}
+@media screen and (max-width: 1024px) {
+  header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+  }
+  header html {
+    font-size: 40.5%;
+  }
 }
 
 .header {
@@ -117,7 +134,7 @@ header {
     top: 0;
     left: -100%;
     flex-direction: column;
-    width: 80%;
+    width: 100%;
     padding: 10rem 0;
     transition: 0.3s;
     background-color: #204370;
@@ -168,6 +185,9 @@ header {
 @media screen and (max-width: 1024px) {
   .header-icon {
     display: block;
+    position: fixed;
+    right: 4rem;
+    z-index: 5;
   }
   .header-icon html {
     font-size: 40.5%;
@@ -422,7 +442,12 @@ header {
   align-self: stretch;
 }
 .founders-contents .content-lists .content-list div {
+  display: flex;
+  align-items: center;
   padding: 3.6rem 0;
+}
+.founders-contents .content-lists .content-list div img {
+  margin-right: 1.5rem;
 }
 @media screen and (max-width: 740px) {
   .founders-contents .content-lists .content-list {
@@ -638,7 +663,6 @@ header {
 }
 .startup-right .cost {
   display: flex;
-  justify-content: .startup-right .cost;
   align-items: center;
   gap: 0 4.7rem;
   margin-top: 2.8rem;
@@ -840,7 +864,6 @@ header {
   padding: 9.8rem 4rem 4rem;
   display: flex;
   justify-content: flex-start;
-  align-items: .footer;
 }
 .footer-logo {
   margin-right: 3rem;
@@ -851,7 +874,6 @@ header {
 .footer-content-up {
   display: flex;
   justify-content: flex-start;
-  align-items: .footer-content-up;
   border-bottom: 1px solid #2323271A;
 }
 .footer-content-up .contact {
@@ -926,7 +948,7 @@ header {
   bottom: -2px;
   width: 0;
   height: 2px;
-  background: purple;
+  background: #204370;
   opacity: 0;
   transition: 0.5s ease;
 }
@@ -1036,7 +1058,7 @@ header {
   bottom: -2px;
   width: 0;
   height: 2px;
-  background: purple;
+  background: #204370;
   opacity: 0;
   transition: 0.5s ease;
 }

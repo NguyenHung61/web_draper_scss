@@ -3,7 +3,7 @@
     width: 100%;
     margin: 0 auto;
     padding: 9.8rem 4rem 4rem;
-    @include flex(flex-start,&);
+    @include flex(flex-start,null);
     &-logo{
         margin-right: 3rem;
     }
@@ -11,7 +11,7 @@
         width: 90%;
         
         &-up{
-            @include flex(flex-start,&);
+            @include flex(flex-start,null);
             border-bottom: 1px solid #2323271A;
             .contact{
                 width: 18%;
@@ -85,7 +85,7 @@
                             bottom: -2px;
                             width: 0;
                             height: 2px;
-                            background: purple;
+                            background: $color-blue;
                             opacity: 0;
                             transition: 0.5s ease;
                         }
@@ -189,7 +189,7 @@
                             bottom: -2px;
                             width: 0;
                             height: 2px;
-                            background: purple;
+                            background: $color-blue;
                             opacity: 0;
                             transition: 0.5s ease;
                         }
