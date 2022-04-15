@@ -1,6 +1,5 @@
 header{
     background-color: #243549;
-    
     @include tablet{
         position: fixed;
         top: 0;
@@ -25,8 +24,6 @@ header{
             
             li{
                 font-weight: bold;
-
-
                 a{
                     color: #e6dedef1;
                     font-size: 1.2rem;
@@ -34,6 +31,10 @@ header{
                     padding: 0 3.2rem;
                     border-left: 1px solid #b4b0b0d8 ;
                     text-transform: uppercase;
+
+                    &:hover::before{
+                        background: $color-white;
+                    }
                     @include tablet{
                         border-left: none;
                     }
@@ -46,13 +47,11 @@ header{
                 left: -100%;
                 flex-direction: column;
                 width: 100%;
-                // height: 100vh;
                 padding: 10rem 0;
                 transition: .3s;
                 background-color: $color-blue;
                 color: $color-white;
                 
-
                 li~li{
                     padding-top: 5rem;
                 }
@@ -75,7 +74,6 @@ header{
             display: none;
         }
     }
-
     &-icon{
         display: none;
         font-size: 5rem;
@@ -96,9 +94,7 @@ header{
         }
     }
     
-
     @include customize(1025px , 1253px){
-        
         ul li a{
             padding: 0 1.2rem;
         }
@@ -106,6 +102,5 @@ header{
     @include customize(1501px, 100vw){
         margin: 0 auto;
         width: 1500px;
-        
     }
 }
